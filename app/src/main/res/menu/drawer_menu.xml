@@ -30,10 +30,17 @@
     <menu>
 
         <item
+            android:id="@+id/dmenu_profile"
+            android:title="@string/menu_profile"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            />
+        <item
             android:id="@+id/dmenu_logout"
             android:title="@string/menu_logout"
             android:icon="@drawable/ic_baseline_login_24"
             />
+
+
     </menu>
 
     </item>
