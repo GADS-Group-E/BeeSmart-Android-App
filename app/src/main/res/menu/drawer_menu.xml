@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item android:title="@string/menu_actions">
+        <menu>
+
+
 
     <item
         android:id="@+id/dmenu_participate"
-        android:title="Practice"
+        android:title="@string/menu_practice"
+        android:icon="@drawable/ic_baseline_play_arrow_24"
         />
     <item
         android:id="@+id/dmenu_statistics"
-        android:title="Statistics"
+        android:title="@string/menu_progress"
+        android:icon="@drawable/ic_baseline_show_chart_24"
         />
     <item
         android:id="@+id/dmenu_leaderboard"
-        android:title="Leaderboard"
+        android:title="@string/menu_leaderboard"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
         />
+        </menu>
+    </item>
+    <item android:title="@string/menu_profile">
+    <menu>
+
+        <item
+            android:id="@+id/dmenu_logout"
+            android:title="@string/menu_logout"
+            android:icon="@drawable/ic_baseline_login_24"
+            />
+    </menu>
+
+    </item>
 </menu>

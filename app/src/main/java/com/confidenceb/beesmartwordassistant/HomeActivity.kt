@@ -15,40 +15,40 @@ class HomeActivity : AppCompatActivity() {
         binding= ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.apply {
-            toggle= ActionBarDrawerToggle(this@HomeActivity,drawerLayout,R.string.open,R.string.close)
-            drawerLayout.addDrawerListener(toggle)
+
+            toggle= ActionBarDrawerToggle(this@HomeActivity,binding.drawerLayout,R.string.open,R.string.close)
+            binding.drawerLayout.addDrawerListener(toggle)
             toggle.syncState()
 
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
             binding.NavDrawer.setNavigationItemSelectedListener {
                 when(it.itemId){
                     R.id.dmenu_participate->{Toast.makeText(this@HomeActivity,"participate",Toast.LENGTH_SHORT).show()}
-                    R.id.dmenu_statistics->{Toast.makeText(this@HomeActivity,"statistics",Toast.LENGTH_SHORT)}
-                    R.id.dmenu_leaderboard->{Toast.makeText(this@HomeActivity,"dmenu_leaderboard",Toast.LENGTH_SHORT)}
+                    R.id.dmenu_statistics->{Toast.makeText(this@HomeActivity,"statistics",Toast.LENGTH_SHORT).show()}
+                    R.id.dmenu_leaderboard->{Toast.makeText(this@HomeActivity,"dmenu_leaderboard",Toast.LENGTH_SHORT).show()}
 
 
                     }
                 true
                 }
-            }
+
         }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if(toggle.onOptionsItemSelected(item)){
-            when(item.itemId) {
-                R.id.dmenu_participate -> {
-                    Toast.makeText(this@HomeActivity, "participate", Toast.LENGTH_SHORT).show()
-                }
-                R.id.dmenu_statistics -> {
-                    Toast.makeText(this@HomeActivity, "statistics", Toast.LENGTH_SHORT)
-                }
-                R.id.dmenu_leaderboard -> {
-                    Toast.makeText(this@HomeActivity, "dmenu_leaderboard", Toast.LENGTH_SHORT)
-                }
-
-            }
+//            when(item.itemId) {
+//                R.id.dmenu_participate -> {
+//                    Toast.makeText(this@HomeActivity, "participate", Toast.LENGTH_SHORT).show()
+//                }
+//                R.id.dmenu_statistics -> {
+//                    Toast.makeText(this@HomeActivity, "statistics", Toast.LENGTH_SHORT)
+//                }
+//                R.id.dmenu_leaderboard -> {
+//                    Toast.makeText(this@HomeActivity, "dmenu_leaderboard", Toast.LENGTH_SHORT)
+//                }
+//
+//            }
 
             true
         }
