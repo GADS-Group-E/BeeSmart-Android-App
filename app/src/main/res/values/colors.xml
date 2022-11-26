@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#0099ff</color>
+    <color name="blue_1">#090Def</color>
+    <color name="blue_2">#90eDef</color>
+    <color name="blue_3">#00A3FF</color>
+    <color name="blue1">#0700C4</color>
+    <color name="blue_5">#0000FF</color>
+    <color name="blue_6">#0052FF</color>
+    <color name="blue4">#007AFF</color>
+    <color name="blue5">#00A3FF</color>
+    <color name="blue6">#00CCFF</color>
+    <color name="magneta">#CC1B9A</color>
+    <color name="magneta1">#FF1DCE</color>
+
 </resources>
