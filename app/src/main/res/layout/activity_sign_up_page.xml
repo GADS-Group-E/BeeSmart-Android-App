@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpPage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sign_Up"
+        android:text="Welcome to BeeSmart Sign Up Page"
+        android:layout_margin="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup_firstName"
+        android:hint="firstname"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2"
+        android:layout_below="@id/Sign_Up"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup_lastName"
+        android:hint="lastname"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2"
+        android:layout_below="@id/txt_signup_firstName"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white">
+
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup_email"
+        android:hint="email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2"
+        android:layout_below="@id/txt_signup_lastName"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:inputType="textEmailAddress"
+        android:background="@color/white">
+
+    </EditText>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup_phone"
+        android:hint="phonenumber"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2"
+        android:layout_below="@id/txt_signup_email"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:background="@color/white">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_signup_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue_5"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/teal_200"
+        android:textStyle="bold"></Button>
+
+</RelativeLayout>
