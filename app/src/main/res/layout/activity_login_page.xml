@@ -7,7 +7,7 @@
     tools:context=".LoginPage">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -16,7 +16,9 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/round_button"
-        android:text="Button"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:backgroundTint="#0098FE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
