@@ -6,76 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".SignUpPage">
 
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#00CBFE" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/wave__3_" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/Sign_Up"
-        android:text="Welcome to BeeSmart Sign Up Page"
-        android:layout_margin="30dp"
-        android:textSize="10sp"
-        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
+        android:text="Welcome to BeeSmart Sign Up Page"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        />
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/txt_signup_firstName"
-        android:hint="firstname"
-        android:textColor="@color/black"
-        android:textColorHint="@color/blue_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/Sign_Up"
-        android:layout_margin="10dp"
-        android:padding="10dp">
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="firstname"
+        android:background="@drawable/round_button"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2">
 
     </EditText>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/txt_signup_lastName"
-        android:hint="lastname"
-        android:textColor="@color/black"
-        android:textColorHint="@color/blue_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/txt_signup_firstName"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:hint="lastname"
         android:padding="10dp"
-        android:background="@color/white">
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2">
 
     </EditText>
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/txt_signup_email"
-        android:hint="email"
-        android:textColor="@color/black"
-        android:textColorHint="@color/blue_2"
-        android:layout_below="@id/txt_signup_lastName"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:drawablePadding="20dp"
-        android:inputType="textEmailAddress"
-        android:background="@color/white">
-
-    </EditText>
-
-
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_signup_phone"
-        android:hint="phonenumber"
-        android:textColor="@color/black"
-        android:textColorHint="@color/blue_2"
-        android:layout_below="@id/txt_signup_email"
-        android:layout_margin="10dp"
-        android:padding="10dp"
+        android:layout_below="@id/txt_signup_lastName"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
         android:drawablePadding="20dp"
-        android:background="@color/white">
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2">
+
     </EditText>
+
+    <EditText
+        android:id="@+id/txt_signup_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_signup_email"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="20dp"
+        android:hint="phonenumber"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_2"></EditText>
 
     <Button
         android:id="@+id/btnSignUp"
@@ -85,11 +117,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/blue_5"
+        android:background="@drawable/signup_button_background_design"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:text="Create Account"
